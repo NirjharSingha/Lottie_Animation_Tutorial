@@ -28,40 +28,9 @@
         <activity
             android:name=".Onboarding"
             android:exported="false" />
-        <activity
-            android:name=".add_course"
-            android:exported="false" />
-        <activity
-            android:name=".Sos"
-            android:exported="true" />
-        <activity
-            android:name=".Events"
-            android:exported="true" />
-        <activity
-            android:name=".Create_event"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.INSERT" />
 
-                <data android:mimeType="vnd.android.cursor.dir/event" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
-            android:name=".Academia"
-            android:exported="true" />
-        <activity
-            android:name=".Signup"
-            android:exported="true" />
-        <activity
-            android:name=".AboutUs"
-            android:exported="true" />
-        <activity
-            android:name=".Login"
-            android:exported="true" />
-        <activity
-            android:name=".Splashscreen"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,9 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
 
 
     </application>

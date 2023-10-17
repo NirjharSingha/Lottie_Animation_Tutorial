@@ -49,7 +49,7 @@ public class Onboarding extends AppCompatActivity {
         });
     }
     public void skip(View view){
-
+        finish();
     }
     public void next(View view){
 

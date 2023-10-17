@@ -63,13 +63,14 @@ public class SliderAdapter extends PagerAdapter {
 
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view= layoutInflater.inflate(R.layout.slides,container,false);
-
-        LottieAnimationView imageView =view.findViewById(R.id.slider_image);
         TextView heading =view.findViewById(R.id.slider_title);
         TextView desc =view.findViewById(R.id.slider_desc);
 
-        imageView.setAnimation(images[position]);
-        imageView.playAnimation();
+        // play the lottie animation here
+        LottieAnimationView animationView =view.findViewById(R.id.slider_image);
+        animationView.setAnimation(images[position]);
+        animationView.playAnimation();
+
         heading.setText(headers[position]);
         desc.setText(descs[position]);
 
